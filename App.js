@@ -43,7 +43,7 @@ return (
 <Header backgroundColor={"darkorange"}
 centerComponent={{
 text:"DICTIONARY APP",
-style:{color:'black',fontSize:20,fontFamily:'Comic Sans MS'}
+style:{color:'black',fontSize:20'}
 }}/>
 
 <Image
@@ -67,7 +67,7 @@ onPress={()=>{
 this.setState({isSearchedPressed:true,word:'loading...',})
 this.getWord(this.state.text)
 }}>
-<Text style={styles.buttonText}>Search</Text>{' '}
+<Text style={styles.buttonText}>Search</Text>
 </TouchableOpacity>
 
   {this.state.word !== 'Loading...' ? (
@@ -108,7 +108,6 @@ alignSelf: 'center',
 height: 40, 
 textAlign: 'center', 
 borderWidth: 4, 
-outline: 'none',
 },
 searchButton: { 
 width: '50%', 
